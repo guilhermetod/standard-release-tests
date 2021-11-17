@@ -1,0 +1,12 @@
+# [1.1.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.0.0...v1.1.0) (2021-11-17)
+
+
+### Bug Fixes
+
+* install git ([b0c1b1c](https://github.com/guilhermetod/standard-release-tests/commit/b0c1b1c31dcb031cff22d7f5fb810ecfd85b5e9d))
+
+
+### Features
+
+* set github token ([aef3c15](https://github.com/guilhermetod/standard-release-tests/commit/aef3c15334489d69e10781faa8beb106d94fbcd8))
+* setup git and github ([78c9a43](https://github.com/guilhermetod/standard-release-tests/commit/78c9a4397bc47b11ee15b5a503a36418e24227d0))
