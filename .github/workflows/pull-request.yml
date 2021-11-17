@@ -1,0 +1,13 @@
+name: Pull request
+
+on: 
+  pull_request:
+    branches:
+      - master
+
+jobs: 
+  draft_release:
+    runs-on: ubuntu-latest
+    name: Draft release
+    steps:
+        - run: npx standard-version --dry-run
