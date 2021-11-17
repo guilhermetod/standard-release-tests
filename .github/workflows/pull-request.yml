@@ -3,11 +3,15 @@ name: Pull request
 on: 
   pull_request:
     branches:
-      - master
+      - main
 
 jobs: 
   draft_release:
     runs-on: ubuntu-latest
     name: Draft release
     steps:
-        - run: npx standard-version --dry-run
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Create draft
+        run: npx standard-version --dry-run
