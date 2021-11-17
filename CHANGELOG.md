@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.2.1...v1.3.0) (2021-11-17)
+
+
+### Bug Fixes
+
+* checkout ([c465556](https://github.com/guilhermetod/standard-release-tests/commit/c465556c4f8c1c7cc29aa400862a4932180455ae))
+* CI ([4135e26](https://github.com/guilhermetod/standard-release-tests/commit/4135e268ac419a56d0f67982c5fa97235ba75d67))
+* CI ([4980e25](https://github.com/guilhermetod/standard-release-tests/commit/4980e254cb86db31ee2cf9ba31a4b069a3bfea8b))
+
+
+### Features
+
+* standard version ([5a9acbb](https://github.com/guilhermetod/standard-release-tests/commit/5a9acbbed25e67ff2718ed558f7ba735f5b92482))
+
 ## [1.2.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.2.0...v1.2.1) (2021-11-17)
 
 
