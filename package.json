@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/guilhermetod/standard-release-tests#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
     "semantic-release": "^18.0.0"
   }
 }
