@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.3.0...v1.4.0) (2021-11-17)
+
+
+### Features
+
+* makes two drafts ([d48e10a](https://github.com/guilhermetod/standard-release-tests/commit/d48e10acb120ff081edc952293fdebf994283e01))
+
 # [1.3.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.2.1...v1.3.0) (2021-11-17)
 
 
