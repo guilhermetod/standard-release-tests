@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.1.0...v1.2.0) (2021-11-17)
+
+
+### Features
+
+* set npm ([e046dac](https://github.com/guilhermetod/standard-release-tests/commit/e046dacdee6ec53f862cea1db439ef592b4486fe))
+
 # [1.1.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.0.0...v1.1.0) (2021-11-17)
 
 
