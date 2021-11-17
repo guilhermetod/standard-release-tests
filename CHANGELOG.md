@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.2.0...v1.2.1) (2021-11-17)
+
+
+### Bug Fixes
+
+* npm ([2bcef91](https://github.com/guilhermetod/standard-release-tests/commit/2bcef91bda3bf9368357d7222d212bdd9c7a1992))
+
 # [1.2.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.1.0...v1.2.0) (2021-11-17)
 
 
