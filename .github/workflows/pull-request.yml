@@ -13,6 +13,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: npm ci
-      - run: echo $(git branch --show-current)
       - name: Create draft
         run: npx standard-version --dry-run
