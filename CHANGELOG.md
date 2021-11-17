@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.0...v1.4.1) (2021-11-17)
+
+
+### Bug Fixes
+
+* **docs:** whitespace ([c6137a9](https://github.com/guilhermetod/standard-release-tests/commit/c6137a907a938581880d13ad1dba5d1036aee782))
+
 # [1.4.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.3.0...v1.4.0) (2021-11-17)
 
 
