@@ -2,8 +2,7 @@ name: Pull request
 
 on: 
   pull_request:
-    branches:
-      - main
+    branches: [main, devel]
 
 jobs: 
   draft_release:
