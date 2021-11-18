@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.2...v1.5.0) (2021-11-18)
+
+
+### Features
+
+* setup devel ([376c25a](https://github.com/guilhermetod/standard-release-tests/commit/376c25a6ab50b9be4ed0c94ad58d291fffc2c38c))
+
 ## [1.4.2](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.1...v1.4.2) (2021-11-18)
 
 
