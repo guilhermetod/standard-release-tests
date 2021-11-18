@@ -1,3 +1,10 @@
+# [1.5.0-beta.2](https://github.com/guilhermetod/standard-release-tests/compare/v1.5.0-beta.1...v1.5.0-beta.2) (2021-11-18)
+
+
+### Bug Fixes
+
+* test beta ([76acc85](https://github.com/guilhermetod/standard-release-tests/commit/76acc859c0cf086413ebc9d4d62469cffac6d3ce))
+
 # [1.5.0-beta.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.0...v1.5.0-beta.1) (2021-11-18)
 
 
