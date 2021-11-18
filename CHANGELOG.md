@@ -1,3 +1,10 @@
+# [1.5.0-beta.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.2...v1.5.0-beta.1) (2021-11-18)
+
+
+### Features
+
+* setup beta ([24d6e7d](https://github.com/guilhermetod/standard-release-tests/commit/24d6e7db570a037189cb6fadfa89dcaaa2a7de9e))
+
 ## [1.4.2](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.1...v1.4.2) (2021-11-18)
 
 
