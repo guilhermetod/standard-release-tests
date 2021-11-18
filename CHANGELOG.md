@@ -1,3 +1,17 @@
+# [1.5.0-beta.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.0...v1.5.0-beta.1) (2021-11-18)
+
+
+### Bug Fixes
+
+* **docs:** whitespace ([c6137a9](https://github.com/guilhermetod/standard-release-tests/commit/c6137a907a938581880d13ad1dba5d1036aee782))
+* setup beta workflow ([a09ecde](https://github.com/guilhermetod/standard-release-tests/commit/a09ecde43563f3583a81393354dd24c319c076b3))
+
+
+### Features
+
+* setup beta ([9b1a59e](https://github.com/guilhermetod/standard-release-tests/commit/9b1a59e928f1926c070fc13b1d250d50cde8364b))
+* setup beta workflow ([0412e4f](https://github.com/guilhermetod/standard-release-tests/commit/0412e4f5e3ff9c4edcfc9ea77a75197d825f0212))
+
 # [1.4.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.3.0...v1.4.0) (2021-11-17)
 
 
