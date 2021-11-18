@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.1...v1.4.2) (2021-11-18)
+
+
+### Bug Fixes
+
+* test ([7dd829e](https://github.com/guilhermetod/standard-release-tests/commit/7dd829e614c61ba1a7f15630a53208a2de29b3ee))
+
 ## [1.4.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.0...v1.4.1) (2021-11-17)
 
 
