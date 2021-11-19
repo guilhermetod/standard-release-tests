@@ -19,8 +19,8 @@ jobs:
         run: npx standard-version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish to npm
-        run: npm publish
+      # - name: Publish to npm
+      #   run: npm publish
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
       - name: Create GitHub release
