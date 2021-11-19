@@ -1,4 +1,5 @@
 const envci = require('env-ci');
+const execa = require('execa');
 const {execSync} = require('child_process')
 // const semanticRelease = require('semantic-release')
 
@@ -16,6 +17,18 @@ const ci = envci({
   }
 })
 
-const execa = execSync('git rev-parse --abbrev-ref HEAD', {encoding: 'utf8'})
+const headRef = execa.sync('git', ['rev-parse', '--abbrev-ref', 'HEAD']).stdout;
 
-console.log({ci, execa})
+if (headRef === 'HEAD') {
+  const branch = execa
+    .sync('git', ['show', '-s', '--pretty=%d', 'HEAD'])
+    .stdout.replace(/^\(|\)$/g, '')
+    .split(', ')
+    .find((branch) => branch.startsWith('origin/'));
+
+  console.log({branch})
+  return branch ? branch.match(/^origin\/(?<branch>.+)/)[1] : undefined;
+}
+
+
+console.log({ci, execResult})
