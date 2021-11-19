@@ -19,10 +19,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: Publish to npm
       #   run: npm publish
-      - name: Push tags
-        run: git push --follow-tags origin main
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
+      - name: Push tags
+        run: git push --follow-tags origin main
       - name: Set package version environment variable
         uses: nyaa8/package-version@v1
       - name: Create GitHub release
