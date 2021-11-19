@@ -25,7 +25,15 @@ jobs:
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
       - name: Create draft
-        run: unset GITHUB_ACTIONS && npx semantic-release --dry-run --no-ci
-      - name: Check if Actions is restored
-        run: echo $GITHUB_ACTIONS
+        id: build-release-notes
+        uses: ./
+      - name: Comment standard-version preview
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            Hey 👋!
+            This is a preview of your release notes, based on your commits.
+            In case you want to change it, you can rebase and adjust your commit messages according to [conventional commits](https://www.conventionalcommits.org/).
+            ${{ steps.build-release-notes.outputs.releaseNotes }}
 
