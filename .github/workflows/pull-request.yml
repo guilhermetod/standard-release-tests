@@ -18,6 +18,8 @@ jobs:
         run: echo $GITHUB_HEAD_REF
       - name: Test env ci
         run: node test-env-ci.js
+        env:
+          GITHUB_REF: devel
       - name: Create draft
         run: npx semantic-release --no-ci --dry-run --branches refs/pull/28/merge,main
 
