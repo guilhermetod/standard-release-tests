@@ -2,6 +2,8 @@ const envci = require('env-ci');
 const execa = require('execa');
 const semanticRelease = require('semantic-release')
 
+console.log({actions: process.env.GITHUB_ACTIONS})
+
 const ci = envci({
   env: {
     ...process.env,

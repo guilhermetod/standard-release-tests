@@ -20,8 +20,10 @@ jobs:
         run: |
           echo $GITHUB_HEAD_REF
           echo $(git branch --show-current)
-      - name: Create draft
-        run: npx semantic-release --no-ci --dry-run
+      - name: Test env ci
+        run: node test.js
         env:
           GITHUB_ACTIONS: false
+      - name: Create draft
+        run: npx semantic-release --no-ci --dry-run
 
