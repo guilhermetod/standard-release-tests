@@ -16,11 +16,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Create draft with standard-version
-        run: npx standard-version --dry-run
-      - name: Create draft with semantic-release
+        id: build_changelog
         run: |
-          git checkout devel
-          npx semantic-release --dry-run --no-ci --branches devel
+         body=$(npx standard-version --dry-run --silent)
+         body="${body//'%'/'%25'}"
+         body="${body//$'\n'/'%0A'}"
+         body="${body//$'\r'/'%0D'}"
+         echo "::set-output name=body::"${body}""
+      - name: Comment standard-version preview
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            Hey 👋!
+            This is a preview of your release notes, based on your commits.
+            In case you want to change it, you can rebase and adjust your commit messages according to [conventional commits](https://www.conventionalcommits.org/).
+            ${{ steps.build_changelog.outputs.body }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
