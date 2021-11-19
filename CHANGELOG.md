@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.7.0...v1.8.0) (2021-11-19)
+
+
+### Features
+
+* **release:** restore all ([6027c42](https://github.com/guilhermetod/standard-release-tests/commit/6027c4234cdd319b21ef8527e21bd1d3bfa5d1e4))
+
 ## [1.6.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.6.0...v1.6.1) (2021-11-19)
 
 
