@@ -19,6 +19,7 @@ jobs:
       - name: Echo current branch
         run: |
           echo $GITHUB_HEAD_REF
+          echo $GITHUB_BASE_REF
           echo $(git branch --show-current)
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
