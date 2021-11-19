@@ -16,7 +16,7 @@ jobs:
       - name: Create draft with standard-version
         run: npx standard-version --dry-run
       - name: Create draft with semantic-release
-        run: npx semantic-release --dry-run
+        run: npx semantic-release --dry-run --no-ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
