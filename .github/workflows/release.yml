@@ -21,5 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: Publish to npm
       #   run: npm publish
+      - name: Push tags
+        run: git push --follow-tags
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
