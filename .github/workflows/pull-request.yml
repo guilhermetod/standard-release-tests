@@ -15,7 +15,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Echo current branch
-        run: echo $GITHUB_HEAD_REF
+        run: |
+          echo $GITHUB_HEAD_REF
+          echo $(git branch --show-current)
       - name: Test env ci
         run: node test.js
         env:
