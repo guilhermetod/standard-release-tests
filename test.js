@@ -30,4 +30,4 @@ if (headRef === 'HEAD') {
 }
 
 
-console.log({ci, execResult})
+console.log({ci, headRef})
