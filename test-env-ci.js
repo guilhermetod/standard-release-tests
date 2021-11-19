@@ -1,5 +1,1 @@
-const envci = require('env-ci')
-
-const env = envci()
-
-console.log(env)
+const { generateNotes } = require('@semantic-release/release-notes-generator');

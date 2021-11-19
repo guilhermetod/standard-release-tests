@@ -17,7 +17,7 @@ jobs:
       - name: Echo current branch
         run: echo $GITHUB_HEAD_REF
       - name: Test env ci
-        run: node test-env-ci.js
+        run: node test.js
         env:
           GITHUB_REF: devel
           GITHUB_EVENT_NAME: false
