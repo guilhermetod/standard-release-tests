@@ -16,5 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Create draft
-        run: npx semantic-release --no-ci --dry-run
+        run: |
+          git checkout devel
+          npx semantic-release --no-ci --dry-run
 
