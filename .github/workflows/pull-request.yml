@@ -15,12 +15,6 @@ jobs:
         run: npm ci
       - name: Create draft with standard-version
         run: npx standard-version --dry-run
-      - name: Create draft with release-changelog-builder-action
-        uses: mikepenz/release-changelog-builder-action@v1
-        with:
-          commitMode: true
-      - name: Echo release-changelog-builder-action
-        run: echo "${{steps.github_release.outputs.changelog}}"
       - name: Create draft with semantic-release
         run: npx semantic-release --dry-run
         env:
