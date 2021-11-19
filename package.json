@@ -1,6 +1,6 @@
 {
   "name": "standard-release-tests",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,9 @@
     "conventional-changelog-cli": "^2.1.1",
     "semantic-release": "^18.0.0",
     "standard-version": "^9.3.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
   }
 }
