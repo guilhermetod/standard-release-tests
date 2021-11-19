@@ -6,6 +6,8 @@ on:
 
 jobs: 
   draft_release:
+    env:
+      GITHUB_ACTIONS: false
     runs-on: ubuntu-latest
     name: Draft release
     steps:
