@@ -19,5 +19,5 @@ jobs:
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
       - name: Create draft
-        run: GITHUB_ACTIONS=0 npx semantic-release --dry-run --no-ci
+        run: GITHUB_ACTIONS=0 node test.js
 
