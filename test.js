@@ -12,6 +12,7 @@ const ci = envci({
   env: {
     ...process.env,
     GITHUB_EVENT: false,      
+    GITHUB_ACTIONS: false
   }
 })
 
