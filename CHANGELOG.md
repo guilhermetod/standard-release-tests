@@ -1,3 +1,41 @@
+## [1.6.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.6.0...v1.6.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* GH ([2062445](https://github.com/guilhermetod/standard-release-tests/commit/2062445ca0c09e9243abddb7b156c5adebf4499a))
+
+# [1.6.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.5.10...v1.6.0) (2021-11-19)
+
+
+### Features
+
+* use semantic release ([de80e76](https://github.com/guilhermetod/standard-release-tests/commit/de80e7612b98c5c111d2ff96f75f8bf640aa78d4))
+
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 1.5.10 (2021-11-19)
+
+### 1.5.9 (2021-11-19)
+
+### 1.5.8 (2021-11-19)
+
+### 1.5.7 (2021-11-19)
+
+### 1.5.6 (2021-11-19)
+
+### 1.5.5 (2021-11-19)
+
+### 1.5.4 (2021-11-19)
+
+### 1.5.3 (2021-11-19)
+
+### 1.5.2 (2021-11-19)
+
+### 1.5.1 (2021-11-19)
+
 # [1.5.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.4.2...v1.5.0) (2021-11-18)
 
 
