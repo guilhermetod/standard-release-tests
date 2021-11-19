@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/guilhermetod/standard-release-tests/compare/v1.6.0...v1.6.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* GH ([2062445](https://github.com/guilhermetod/standard-release-tests/commit/2062445ca0c09e9243abddb7b156c5adebf4499a))
+
 # [1.6.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.5.10...v1.6.0) (2021-11-19)
 
 
