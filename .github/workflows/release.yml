@@ -23,7 +23,3 @@ jobs:
         run: git push --follow-tags origin main
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
-      - name: Create GitHub release
-        uses: ncipollo/release-action@v1
-        with:
-            bodyFile: CHANGELOG.text
