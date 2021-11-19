@@ -24,6 +24,6 @@ jobs:
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
       - name: Create GitHub release
-        uses: softprops/action-gh-release@v1
+        uses: ncipollo/release-action@v1
         with:
-            body_path: CHANGELOG.text
+            bodyFile: CHANGELOG.text
