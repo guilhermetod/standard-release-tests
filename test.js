@@ -1,4 +1,4 @@
-const envci = require('envci');
+const envci = require('env-ci');
 const {execSync} = require('child_process')
 // const semanticRelease = require('semantic-release')
 
