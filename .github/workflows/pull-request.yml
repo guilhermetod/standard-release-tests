@@ -18,15 +18,6 @@ jobs:
         run: npm ci
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
-      - name: Echo current branch
-        run: |
-          echo $GITHUB_HEAD_REF
-          echo $(git branch --show-current)
-          echo "GITHUB_ACTIONS=0" >> $GITHUB_ENV
-      - name: Test env ci
-        run: node test.js
-        env:
-          GITHUB_ACTIONS: false
       - name: Create draft
-        run: npx semantic-release --no-ci --dry-run
+        run: GITHUB_ACTIONS=false node test.js
 
