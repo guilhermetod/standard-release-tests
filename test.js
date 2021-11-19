@@ -20,14 +20,13 @@ const ci = envci({
 const headRef = execa.sync('git', ['rev-parse', '--abbrev-ref', 'HEAD']).stdout;
 
 if (headRef === 'HEAD') {
-  const branch = execa
-    .sync('git', ['show', '-s', '--pretty=%d', 'HEAD'])
-    .stdout.replace(/^\(|\)$/g, '')
+  const gitShow = execa.sync('git', ['show', '-s', '--pretty=%d', 'HEAD']).stdout
+  const branch = gitShow
+    replace(/^\(|\)$/g, '')
     .split(', ')
     .find((branch) => branch.startsWith('origin/'));
 
-  console.log({branch})
-  return branch ? branch.match(/^origin\/(?<branch>.+)/)[1] : undefined;
+  console.log({branch, gitShow})
 }
 
 
