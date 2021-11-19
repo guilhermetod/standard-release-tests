@@ -23,7 +23,3 @@ jobs:
       #   run: npm publish
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
-      - name: Create GitHub release
-        uses: softprops/action-gh-release@v1
-        with:
-            body_file: CHANGELOG.text
