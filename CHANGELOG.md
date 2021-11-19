@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.5.10...v1.6.0) (2021-11-19)
+
+
+### Features
+
+* use semantic release ([de80e76](https://github.com/guilhermetod/standard-release-tests/commit/de80e7612b98c5c111d2ff96f75f8bf640aa78d4))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
