@@ -20,6 +20,6 @@ jobs:
       # - name: Publish to npm
       #   run: npm publish
       - name: Push tags
-        run: git push --follow-tags
+        run: git push --follow-tags origin main
       - name: Generate release note
         run: npx conventional-changelog -p angular > CHANGELOG.text
