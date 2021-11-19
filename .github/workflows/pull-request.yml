@@ -20,11 +20,8 @@ jobs:
         run: |
           echo $GITHUB_HEAD_REF
           echo $(git branch --show-current)
-      - name: Test env ci
-        run: node test.js
-        env:
-          GITHUB_REF: devel
-          GITHUB_EVENT_NAME: false
       - name: Create draft
-        run: npx semantic-release --no-ci --dry-run --branches refs/pull/28/merge,main
+        run: npx semantic-release --no-ci --dry-run
+        env:
+          GITHUB_ACTIONS: false
 
