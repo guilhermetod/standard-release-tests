@@ -15,5 +15,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Create draft
-        run: npx semantic-release --no-ci --dry-run --branches refs/pull/28/merge
+        run: npx semantic-release --no-ci --dry-run --branches refs/pull/28/merge,main
 
