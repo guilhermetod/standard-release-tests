@@ -22,7 +22,7 @@ const headRef = execa.sync('git', ['rev-parse', '--abbrev-ref', 'HEAD']).stdout;
 if (headRef === 'HEAD') {
   const gitShow = execa.sync('git', ['show', '-s', '--pretty=%d', 'HEAD']).stdout
   const branch = gitShow
-    replace(/^\(|\)$/g, '')
+    .replace(/^\(|\)$/g, '')
     .split(', ')
     .find((branch) => branch.startsWith('origin/'));
 
