@@ -1,5 +1,5 @@
+const actionsCore = require('@actions/core');
 const semanticRelease = require('semantic-release');
-const core = require('@actions/core');
 
 async function run() {
   const { nextRelease } = await semanticRelease({
@@ -10,7 +10,7 @@ async function run() {
     env: { ...process.env,  GITHUB_ACTIONS: false },
   });
   
-  core.setOutput('releaseNotes', nextRelease.notes);
+  actionsCore.setOutput('releaseNotes', nextRelease.notes);
 }
 
 run();
