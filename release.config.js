@@ -1,4 +1,4 @@
-const  types = [
+const types = [
   { type: 'Docs', release: 'patch' },
   { type: 'Chore', release: 'patch' },
   { type: 'CI', release: 'patch' },
@@ -9,7 +9,6 @@ const  types = [
   { type: 'Revert', release: 'patch' },
   { type: 'Style', release: 'patch' },
   { type: 'Test', release: 'patch' },
-  { type: 'WIP', release: 'patch' },
 ];
 
 module.exports = {
