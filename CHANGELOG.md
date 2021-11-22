@@ -1,3 +1,16 @@
+## [3.0.0](https://github.com/guilhermetod/standard-release-tests/compare/v2.0.0...v3.0.0) (2021-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **action:** change description
+
+### Bug Fixes
+
+* **action:** change description ([83ca196](https://github.com/guilhermetod/standard-release-tests/commit/83ca196e255bcf4070facce564d85398910ee0af))
+* **action:** change name ([501d1ff](https://github.com/guilhermetod/standard-release-tests/commit/501d1ff1fc6af2c4af34879bd1254faa05d14e6f))
+* **release:** demo ([6f917b6](https://github.com/guilhermetod/standard-release-tests/commit/6f917b621c4b8db27adead068e1ef56d4939c7f6))
+
 ## [2.0.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.8.0...v2.0.0) (2021-11-22)
 
 
