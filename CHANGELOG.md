@@ -1,3 +1,20 @@
+## [2.0.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.8.0...v2.0.0) (2021-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **test:** only testing
+
+### Features
+
+* **bot:** update message ([4818249](https://github.com/guilhermetod/standard-release-tests/commit/481824952864518f8df36ee41eff825c48bbd32b))
+* configure titlecase ([7e5308d](https://github.com/guilhermetod/standard-release-tests/commit/7e5308d0c88b4867a9580b496fcc082478a00b53))
+* **release:** demo ([d206be6](https://github.com/guilhermetod/standard-release-tests/commit/d206be606075b1880862592e3744542414b171b5))
+* **release:** setup everything ([a29d2fd](https://github.com/guilhermetod/standard-release-tests/commit/a29d2fd745b48fc0cafc5f972cfc36da4f706422))
+* setup types ([a1a216e](https://github.com/guilhermetod/standard-release-tests/commit/a1a216e707481c86d384a5eff2e4087493cd15a2))
+* test uppercase ([d6b3ee3](https://github.com/guilhermetod/standard-release-tests/commit/d6b3ee3d24c422f38b90c135175e6cacd625e4ee))
+* **test:** breaking change test ([62d9447](https://github.com/guilhermetod/standard-release-tests/commit/62d944755ffcaa6f465fe35c872c1b655951b49f))
+
 # [1.8.0](https://github.com/guilhermetod/standard-release-tests/compare/v1.7.0...v1.8.0) (2021-11-19)
 
 
