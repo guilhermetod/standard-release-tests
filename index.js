@@ -1,5 +1,5 @@
-const semanticRelease = require('semantic-release');
 const core = require('@actions/core');
+const semanticRelease = require('semantic-release');
 
 async function run() {
   const { nextRelease } = await semanticRelease({
