@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Standard release test'
 description: 'Greet someone and record the time'
 runs:
   using: 'node12'
