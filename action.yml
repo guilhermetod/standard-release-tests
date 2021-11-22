@@ -1,5 +1,5 @@
 name: 'Standard release test'
-description: 'Greet someone and record the time'
+description: 'Outputs a changelog preview'
 runs:
   using: 'node12'
   main: 'index.js'
