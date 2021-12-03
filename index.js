@@ -20,7 +20,7 @@ async function getPluginsConfig() {
   const {plugins} = config;
 
   const commitAnalyzerConfig = findPluginConfig(plugins, '@semantic-release/commit-analyzer');
-  const releaseNotesGeneratorConfig = getPluginsConfig(plugins, '@semantic-release/release-notes-generator');
+  const releaseNotesGeneratorConfig = findPluginConfig(plugins, '@semantic-release/release-notes-generator');
 
   console.log({
     commitAnalyzerConfig,
@@ -37,7 +37,7 @@ async function run() {
   const { nextRelease } = await semanticRelease({
      ci: false,
      dryRun: true,
-     plugins: getPluginsConfig(),
+     plugins: await getPluginsConfig(),
    }, {
     env: {
        ...process.env,
