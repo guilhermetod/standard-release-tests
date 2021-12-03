@@ -1,6 +1,6 @@
 const changelogConfig = require('conventional-changelog-conventionalcommits/parser-opts')
 
-const otherChanges = { section: 'Other Changes' };
+const otherChanges = { section: 'Other Changes', hidden: false };
 
 const commitConvention = [
   { type: 'Build', release: 'patch', ...otherChanges },
@@ -16,9 +16,9 @@ const commitConvention = [
   { type: 'Test', release: false, ...otherChanges },
 ];
 
-const releaseRules = commitConvention.map(({ type, release }) => ({type, release}));
+const releaseRules = commitConvention.map(({ type, release }) => ({ type, release }));
 
-const types = commitConvention.map(({ type, section }) => ({type, section}));
+const types = commitConvention.map(({ type, section }) => ({ type: type.toLowerCase(), section }));
 
 module.exports = {
   branches: [
