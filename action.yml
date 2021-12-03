@@ -1,5 +1,10 @@
 name: 'Standard release test'
 description: 'Outputs a changelog preview'
+inputs:
+  preset:
+    description: 'Which changelog preset to use'
+    required: false
+    default: 'angular'
 runs:
   using: 'node12'
   main: 'index.js'
