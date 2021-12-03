@@ -1,10 +1,5 @@
-name: 'Standard release test'
-description: 'Outputs a changelog preview'
-inputs:
-  preset:
-    description: 'Which changelog preset to use'
-    required: false
-    default: 'angular'
+name: 'Release notes preview'
+description: 'Generates and outputs a release notes preview'
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: 'node16'
+  main: 'src/index.js'
