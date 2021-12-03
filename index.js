@@ -3,6 +3,9 @@ const semanticRelease = require('semantic-release');
 
 async function run() {
   const preset = actionsCore.getInput('preset');
+  
+  console.log(`Using preset: ${preset}`);
+
   const { nextRelease } = await semanticRelease({
      ci: false,
      dryRun: true,

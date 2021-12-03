@@ -6,8 +6,6 @@ on:
 
 jobs: 
   draft_release:
-    env:
-      GITHUB_ACTIONS: false
     runs-on: ubuntu-latest
     name: Draft release
     steps:
@@ -27,6 +25,8 @@ jobs:
       - name: Create draft
         id: build-release-notes
         uses: ./
+        with:
+          preset: 'conventionalcommits'
       - name: Comment standard-version preview
         uses: peter-evans/create-or-update-comment@v1
         with:
