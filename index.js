@@ -7,7 +7,10 @@ async function run() {
      dryRun: true,
      plugins: ['@semantic-release/release-notes-generator'],
    }, {
-    env: { ...process.env,  GITHUB_ACTIONS: false },
+    env: {
+       ...process.env,
+        GITHUB_ACTIONS: false,
+      },
   });
   
   actionsCore.setOutput('releaseNotes', nextRelease.notes);
