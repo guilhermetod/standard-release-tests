@@ -6,8 +6,12 @@ import semanticRelease from 'semantic-release';
 import { getPluginsConfig } from '@src/helpers/utils/get-plugins-config';
 
 async function dryRunRelease(): Promise<semanticRelease.Result> {
-  execSync(`git checkout ${process.env.GITHUB_HEAD_REF}`);
+  const prBranch = process.env.GITHUB_HEAD_REF as string;
+
+  execSync(`git checkout ${prBranch}`);
+
   return semanticRelease({
+    branches: [prBranch],
     ci: false,
     dryRun: true,
     plugins: await getPluginsConfig(),

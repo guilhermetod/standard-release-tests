@@ -12,6 +12,8 @@ jest.mock('@src/helpers/utils/get-plugins-config');
 
 describe('outputPreview', () => {
   const plugins = ['dummy-plugin'];
+  const prBranch = 'main';
+  process.env.GITHUB_HEAD_REF = prBranch;
 
   it('should generate the release notes and output it to GitHub Actions', async () => {
     const notes = 'Release notes';
@@ -22,7 +24,7 @@ describe('outputPreview', () => {
     await outputPreview();
 
     expect(semanticRelease).toHaveBeenCalledWith(
-      { ci: false, dryRun: true, plugins },
+      { ci: false, dryRun: true, branches: [prBranch], plugins },
       { env: { ...process.env, GITHUB_ACTIONS: '' } },
     );
     expect(setOutput).toHaveBeenCalledWith('releaseNotes', notes);
