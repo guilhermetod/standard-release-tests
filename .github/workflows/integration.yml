@@ -24,6 +24,8 @@ jobs:
       - name: Build release notes previres
         id: build-release-notes
         uses: ./
+      - name: Checkout branch
+        run: git checkout $GITHUB_HEAD_REF
       - name: Comment release notes preview
         uses: peter-evans/create-or-update-comment@v1
         with:
