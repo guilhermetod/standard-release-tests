@@ -22,6 +22,8 @@ jobs:
           echo $(git branch --show-current)
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
+      - name: Build
+        run: npm run build
       - name: Create draft
         id: build-release-notes
         uses: ./
