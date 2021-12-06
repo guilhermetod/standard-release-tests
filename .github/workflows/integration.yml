@@ -26,7 +26,7 @@ jobs:
         run: git checkout $GITHUB_HEAD_REF
       - name: Create draft
         id: build-release-notes
-        uses: guilhermetod/semantic-release-notes-preview@v1
+        uses: guilhermetod/semantic-release-notes-preview@v1.0.0
       - name: Comment standard-version preview
         uses: peter-evans/create-or-update-comment@v1
         with:
