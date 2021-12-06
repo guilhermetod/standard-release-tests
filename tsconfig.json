@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ESNext"
+    ],
+    "importHelpers": true,
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "noEmit": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "paths": {
+      "@src/*": [
+        "./src/*"
+      ]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2019",
+    "types": [
+      "jest",
+      "node"
+    ]
+  }
+}

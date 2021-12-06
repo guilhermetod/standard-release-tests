@@ -1,5 +1,8 @@
-name: 'Release notes preview'
+name: 'Semantic Release Notes Preview'
 description: 'Generates and outputs a release notes preview'
+branding:
+  color: 'white'
+  icon: 'check-circle'
 runs:
   using: 'node16'
   main: 'src/index.js'
