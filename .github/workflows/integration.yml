@@ -23,11 +23,11 @@ jobs:
         run: npm run test:ci
       - name: Build
         run: npm run build
-      - name: Build release notes previres
-        id: build-release-notes
-        uses: ./
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
+      - name: Build release notes preview
+        id: build-release-notes
+        uses: ./
       - name: Comment release notes preview
         uses: peter-evans/create-or-update-comment@v1
         with:
