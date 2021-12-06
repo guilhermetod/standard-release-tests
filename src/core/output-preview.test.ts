@@ -1,6 +1,6 @@
 import { setOutput } from '@actions/core';
+import { mocked } from 'jest-mock';
 import semanticRelease from 'semantic-release';
-import { mocked } from 'ts-jest/utils';
 
 import { outputPreview } from '@src/core/output-preview';
 import { getPluginsConfig } from '@src/helpers/utils/get-plugins-config';

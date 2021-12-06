@@ -1,5 +1,5 @@
 import { cosmiconfig } from 'cosmiconfig';
-import { mocked } from 'ts-jest/utils';
+import { mocked } from 'jest-mock';
 
 import { getPluginsConfig } from '@src/helpers/utils/get-plugins-config';
 import { resolvePluginConfig } from '@src/helpers/utils/resolve-plugin-config';
