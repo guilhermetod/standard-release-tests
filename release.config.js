@@ -1,7 +1,7 @@
 const { releaseRules } = require('./tools/utils/release-rules');
 
 module.exports = {
-  branches: ['main'],
+  branches: ['main', 'devel'],
   plugins: [
     ['@semantic-release/commit-analyzer', { preset: 'conventionalcommits', releaseRules }],
     ['@semantic-release/release-notes-generator', { preset: 'conventionalcommits' }],
