@@ -3,7 +3,7 @@ import { execSync } from 'child_process';
 import { setOutput } from '@actions/core';
 import semanticRelease from 'semantic-release';
 
-import { getPluginsConfig } from '@src/helpers/utils/get-plugins-config';
+import { getBaseConfig } from '@src/helpers/utils/get-base-config';
 
 async function dryRunRelease(): Promise<semanticRelease.Result> {
   const prBranch = process.env.GITHUB_HEAD_REF as string;
@@ -11,10 +11,9 @@ async function dryRunRelease(): Promise<semanticRelease.Result> {
   execSync(`git checkout ${prBranch}`);
 
   return semanticRelease({
-    branches: [prBranch],
     ci: false,
     dryRun: true,
-    plugins: await getPluginsConfig(),
+    ...await getBaseConfig(),
   }, {
     env: { ...process.env, GITHUB_ACTIONS: '' },
   });
