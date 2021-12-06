@@ -23,8 +23,6 @@ jobs:
         run: npm run test:ci
       - name: Build
         run: npm run build
-      - name: Checkout branch
-        run: git checkout $GITHUB_HEAD_REF
       - name: Build release notes preview
         id: build-release-notes
         uses: ./

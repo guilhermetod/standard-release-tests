@@ -5,6 +5,7 @@ import semanticRelease from 'semantic-release';
 import { outputPreview } from '@src/core/output-preview';
 import { getPluginsConfig } from '@src/helpers/utils/get-plugins-config';
 
+jest.mock('child_process');
 jest.mock('@actions/core');
 jest.mock('semantic-release');
 jest.mock('@src/helpers/utils/get-plugins-config');
