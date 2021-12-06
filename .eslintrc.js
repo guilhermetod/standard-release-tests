@@ -24,7 +24,10 @@ const commonJSAndTSRules = {
 };
 
 module.exports = {
-  ignorePatterns: gitIgnorePatterns,
+  ignorePatterns: [
+    ...gitIgnorePatterns,
+    'dist',
+  ],
   overrides: [
     // Javascript
     {
