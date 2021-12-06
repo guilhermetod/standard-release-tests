@@ -20,6 +20,8 @@ jobs:
           echo $GITHUB_BASE_REF
           echo $GITHUB_REF
           echo $(git branch --show-current)
+      - name: Build
+        run: npm run build
       - name: Checkout branch
         run: git checkout $GITHUB_HEAD_REF
       - name: Create draft
