@@ -8,11 +8,12 @@ export default {
   output: {
     file: 'dist/index.js',
     format: 'cjs',
+    preferConst: true,
   },
   plugins: [
     typescript(),
     resolve(),
-    commonjs({ dynamicRequireTargets: ['release.*'] }),
+    commonjs({ ignoreDynamicRequires: true }),
     json(),
   ],
 };

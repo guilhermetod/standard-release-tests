@@ -10,10 +10,10 @@
     ],
     "importHelpers": true,
     "moduleResolution": "Node",
-    "module": "CommonJS",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
+    "outDir": "dist",
     "paths": {
       "@src/*": [
         "./src/*"
