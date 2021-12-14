@@ -6,8 +6,6 @@ on:
 
 jobs: 
   draft_release:
-    env:
-      GITHUB_ACTIONS: false
     runs-on: ubuntu-latest
     name: Draft release
     steps:
@@ -16,17 +14,9 @@ jobs:
           fetch-depth: 0
       - name: Install dependencies
         run: npm ci
-      - name: Echo current branch
-        run: |
-          echo $GITHUB_HEAD_REF
-          echo $GITHUB_BASE_REF
-          echo $GITHUB_REF
-          echo $(git branch --show-current)
-      - name: Checkout branch
-        run: git checkout $GITHUB_HEAD_REF
       - name: Create draft
         id: build-release-notes
-        uses: ./
+        uses: guilhermetod/semantic-release-notes-preview@v1.0.0
       - name: Comment standard-version preview
         uses: peter-evans/create-or-update-comment@v1
         with:

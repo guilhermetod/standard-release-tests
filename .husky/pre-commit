@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+rm -rf dist
+git add dist || true
+
+npx lint-staged -x && npm test -- -o
